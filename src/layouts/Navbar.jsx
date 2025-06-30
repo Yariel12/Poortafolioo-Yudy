@@ -1,99 +1,95 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const { pathname } = useLocation();
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
+  const getLinkClass = (path) =>
+    `block md:inline hover:text-[#2563eb] transition-colors ${
+      pathname === path ? "text-[#2563eb] font-semibold" : "text-gray-600"
+    }`;
+
   return (
-    <header className="bg-[#f5f5f5] border-b border-gray-300 py-5">
-      <div className="container mx-auto px-5 flex justify-between items-center">
-        {/* Logo y título */}
+    <header className="bg-[#f5f5f5] border-b border-gray-300 py-4">
+      <div className="container flex items-center justify-between px-5 mx-auto">
+        {/* Logo */}
         <div className="flex items-center gap-2">
           <span className="text-xl">🔷</span>
           <div className="flex flex-col leading-tight">
             <span className="font-semibold text-lg text-[#333]">
               Yudelka Almonte
             </span>
-            <span className="text-sm text-gray-600 font-normal">
+            <span className="text-sm font-normal text-gray-600">
               / Asesora Inmobiliaria
             </span>
           </div>
         </div>
 
-        {/* Menú grande */}
-        <nav className="hidden md:flex gap-8 text-gray-600 text-sm font-medium tracking-wide">
-          <Link
-            to="/"
-            className="nav-link active text-[#2563eb] hover:text-[#2563eb] transition-colors"
-          >
+        {/* Menú Desktop */}
+        <nav className="hidden gap-6 text-sm font-medium tracking-wide md:flex">
+          <Link to="/" className={getLinkClass("/")}>
             SOBRE MÍ
           </Link>
-          <Link
-            to="/curriculum"
-            className="hover:text-[#2563eb] transition-colors"
-          >
-            CURRÍCULUM
+          <Link to="/curriculum" className={getLinkClass("/curriculum")}>
+            ACTIVIDADES Y APRENDIZAJE
           </Link>
-          <Link
-            to="/proyectos"
-            className="hover:text-[#2563eb] transition-colors"
-          >
-            PROYECTOS
+          <Link to="/Contactos" className={getLinkClass("/Contactos")}>
+            CONTACTO
           </Link>
-          <Link
-            to="/contacto"
-            className="hover:text-[#2563eb] transition-colors"
-          >
+          <Link to="/Habilidades" className={getLinkClass("/Habilidades")}>
             HABILIDADES
           </Link>
         </nav>
 
-        {/* Botón hamburguesa en móvil */}
+        {/* Botón Móvil */}
         <button
-          className="md:hidden text-[#333]"
+          className="md:hidden text-[#333] focus:outline-none"
           onClick={toggleMenu}
-          aria-label="Menú"
+          aria-label="Abrir menú"
         >
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
+          {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
 
-      {/* Menú desplegable para móvil */}
-      {isOpen && (
-        <nav className="md:hidden mt-4 px-5 space-y-2 text-gray-600 text-sm font-medium tracking-wide">
-          <Link
-            to="/"
-            onClick={toggleMenu}
-            className="block hover:text-[#2563eb] transition-colors"
-          >
+      {/* Menú Móvil desplegable */}
+      <div
+        className={`md:hidden transition-all duration-300 ${
+          isOpen
+            ? "max-h-[300px] opacity-100"
+            : "max-h-0 opacity-0 overflow-hidden"
+        } bg-[#f5f5f5] px-5 pb-4`}
+      >
+        <nav className="flex flex-col gap-3 mt-4 text-sm font-medium tracking-wide">
+          <Link to="/" onClick={toggleMenu} className={getLinkClass("/")}>
             SOBRE MÍ
           </Link>
           <Link
             to="/curriculum"
             onClick={toggleMenu}
-            className="block hover:text-[#2563eb] transition-colors"
+            className={getLinkClass("/curriculum")}
           >
-            CURRÍCULUM
+            ACTIVIDADES Y APRENDIZAJE
           </Link>
           <Link
-            to="/proyectos"
+            to="/Contactos"
             onClick={toggleMenu}
-            className="block hover:text-[#2563eb] transition-colors"
+            className={getLinkClass("/Contactos")}
           >
-            PROYECTOS
+            CONTACTO
           </Link>
           <Link
-            to="/contacto"
+            to="/Habilidades"
             onClick={toggleMenu}
-            className="block hover:text-[#2563eb] transition-colors"
+            className={getLinkClass("/Habilidades")}
           >
             HABILIDADES
           </Link>
         </nav>
-      )}
+      </div>
     </header>
   );
 }
