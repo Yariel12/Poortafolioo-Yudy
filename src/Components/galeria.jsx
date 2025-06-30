@@ -8,7 +8,7 @@ const images = [
     url: "/Uploads/Foto3.jpeg",
   },
   {
-    url: "public/Uploads/WhatsApp Image 2025-06-30 at 1.40.34 PM.jpeg",
+    url: "/Uploads/FOTOOOO.jpeg",
   },
   {
     url: "/Uploads/foto5.jpeg",
