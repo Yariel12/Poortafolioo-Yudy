@@ -2,7 +2,7 @@ import React from "react";
 
 function Bibliografia() {
   return (
-    <section className="bg-[#e8ddd4] py-16 px-5 text-[#333]">
+    <section className="bg-[#e8ddd4] pb-16 px-5 text-[#333]">
       <div className="max-w-6xl mx-auto">
         <h2 className="mb-12 text-4xl font-bold text-center sm:text-5xl">
           Bibliografía Personal
