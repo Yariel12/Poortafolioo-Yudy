@@ -16,8 +16,8 @@ function Home() {
           <aside className="bg-white p-10 rounded-lg shadow-lg sticky top-10 text-center">
             <div className="w-[120px] h-[120px] mx-auto mb-8 rounded-full border-4 border-gray-200 overflow-hidden">
               <img
-                src="../public/Foto1-yudy.jpeg"
-                alt="Yudelka Almonte"
+                src="/Uploads/Foto1-yudy.jpeg"
+                alt="Yuderka Almonte"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -57,7 +57,7 @@ function Home() {
 
             <div className="flex gap-5 mb-12 flex-wrap max-sm:flex-col max-sm:items-start">
               <a
-                href="../public/Curriculum Vitae Yuderka (2).pdf"
+                href="/Uploads/Curriculum Vitae Yuderka (2).pdf"
                 target="_blank"
                 rel="noreferrer"
               >

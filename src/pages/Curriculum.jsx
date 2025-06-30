@@ -4,7 +4,7 @@ function Curriculum() {
   return (
     <div className=" mx-auto px-8 py-10 bg-[#e8ddd4]">
       <a
-        href="../public/Curriculum Vitae Yuderka (2).pdf"
+        href="/Uploads/Curriculum Vitae Yuderka (2).pdf"
         target="_blank"
         rel="noreferrer"
         className="inline-block bg-[#0047ff] text-white font-bold py-2 px-5 rounded-full mb-5 transition-colors hover:bg-[#0035c4]"
