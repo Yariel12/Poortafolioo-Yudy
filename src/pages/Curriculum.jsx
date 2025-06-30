@@ -2,63 +2,49 @@ import React from "react";
 
 function Curriculum() {
   return (
-    <div className=" mx-auto px-8 py-10 bg-[#e8ddd4]">
+    <div className="mx-auto px-8 py-10 bg-[#e8ddd4] text-[#2c2c2c]">
       <a
         href="/Uploads/Curriculum Vitae Yuderka (2).pdf"
         target="_blank"
         rel="noreferrer"
-        className="inline-block bg-[#0047ff] text-white font-bold py-2 px-5 rounded-full mb-5 transition-colors hover:bg-[#0035c4]"
+        className="inline-block bg-[#0047ff] text-white font-bold py-2 px-5 rounded-full mb-8 transition-colors hover:bg-[#0035c4]"
       >
         Visualizar mi CV
       </a>
 
-      <section className="mb-10">
-        <h2 className="text-2xl mb-5 text-black font-semibold">Experiencia</h2>
-        <div className="bg-white p-8 rounded-lg shadow-md flex flex-wrap gap-8">
-          <div className="flex-1 min-w-[250px]">
-            <div className="text-[#0047ff] font-bold text-lg mb-2">
-              2025 – A la fecha
-            </div>
-            <div className="font-bold mb-1">PUESTO</div>
-            <p className="text-gray-800 mb-1">Nombre de la empresa</p>
-            <p className="text-gray-800">Ubicación de la empresa</p>
-          </div>
-          <div className="flex-1 min-w-[350px]">
-            <p className="text-gray-700 mb-3">
-              Párrafo. Haz clic aquí para agregar tu propio texto y editar. Es
-              fácil.
-            </p>
-            <p className="text-gray-700">
-              Aquí puedes contar tu historia y permitir que tus usuarios sepan
-              más sobre ti.
-            </p>
-          </div>
-        </div>
-      </section>
+      <div className="bg-white rounded-2xl shadow-lg p-6 space-y-6">
+        <h2 className="text-2xl font-semibold text-[#0047ff] border-b-2 border-[#0047ff] pb-2">
+          2. Actividades Realizadas
+        </h2>
 
-      <section>
-        <h2 className="text-2xl mb-5 text-black font-semibold">Educación</h2>
-        <div className="bg-white p-8 rounded-lg shadow-md flex flex-wrap gap-8">
-          <div className="flex-1 min-w-[250px]">
-            <div className="text-[#0047ff] font-bold text-lg mb-2">
-              2035 – A la fecha
-            </div>
-            <div className="font-bold mb-1">PUESTO</div>
-            <p className="text-gray-800 mb-1">Nombre de la empresa</p>
-            <p className="text-gray-800">Ubicación de la empresa</p>
-          </div>
-          <div className="flex-1 min-w-[350px]">
-            <p className="text-gray-700 mb-3">
-              Párrafo. Haz clic aquí para agregar tu propio texto y editar. Es
-              fácil.
-            </p>
-            <p className="text-gray-700">
-              Aquí puedes contar tu historia y permitir que tus usuarios sepan
-              más sobre ti.
-            </p>
-          </div>
+        <div>
+          <h3 className="text-xl font-bold mb-1 text-[#333]">
+            Descripción de Proyectos
+          </h3>
+          <p className="text-base leading-relaxed">
+            De entrada está esta es una oficina que se dedica a la auditoría y
+            asesoría de impuestos. La empresa maneja la contabilidad de varias
+            compañías, principalmente de constructoras en lo que amo se refiere
+            yo he trabajado con varias haciendo declaraciones en el 606. Y en el
+            sistema odoo que es el que la oficina tiene contratado. En el
+            sistema odoo es muy amigable trabajar ya que todos los procesos y
+            cuentas se maneja en unión.
+          </p>
         </div>
-      </section>
+
+        <div>
+          <h3 className="text-xl font-bold mb-1 text-[#333]">
+            Habilidades Aplicadas
+          </h3>
+          <ul className="list-disc list-inside space-y-1">
+            <li>Atención al detalle.</li>
+            <li>Trabajo en equipo.</li>
+            <li>Pensamiento crítico y lógico.</li>
+            <li>Capacidad de adaptación.</li>
+            <li>Dominio sobre sistemas contables y software.</li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }

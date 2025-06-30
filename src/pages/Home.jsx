@@ -12,25 +12,26 @@ function Home() {
     <div className="bg-[#e8ddd4] text-[#333] font-sans leading-relaxed min-h-screen flex flex-col">
       {/* Main */}
       <main className="flex-grow container mx-auto px-5 py-16 min-h-[calc(100vh-80px)]">
-        <div className="grid grid-cols-[350px_1fr] gap-20 items-start max-w-[1200px] mx-auto">
-          <aside className="bg-white p-10 rounded-lg shadow-lg sticky top-10 text-center">
-            <div className="w-[120px] h-[120px] mx-auto mb-8 rounded-full border-4 border-gray-200 overflow-hidden">
+        <div className="grid grid-cols-1 md:grid-cols-[350px_1fr] gap-10 items-start max-w-[1200px] mx-auto">
+          {/* Aside */}
+          <aside className="bg-white p-8 rounded-2xl shadow-lg md:sticky top-10 text-center order-2 md:order-1">
+            <div className="w-[120px] h-[120px] mx-auto mb-6 rounded-full border-4 border-gray-200 overflow-hidden">
               <img
                 src="/Uploads/Foto1-yudy.jpeg"
                 alt="Yuderka Almonte"
                 className="w-full h-full object-cover"
               />
             </div>
-            <h2 className="text-3xl font-bold text-[#333] mb-5 leading-tight">
+            <h2 className="text-3xl font-bold text-[#333] mb-4 leading-tight">
               Yudelka <br />
               Almonte
             </h2>
-            <div className="w-10 h-1 bg-[#2563eb] mx-auto mb-5"></div>
-            <p className="text-gray-600 font-medium tracking-wide mb-8">
+            <div className="w-10 h-1 bg-[#2563eb] mx-auto mb-4"></div>
+            <p className="text-gray-600 font-medium tracking-wide mb-6">
               Asesora Inmobiliaria
             </p>
 
-            <div className="flex gap-3 mt-1 text-black text-lg justify-center">
+            <div className="flex gap-4 justify-center text-black text-lg">
               <a href="#" className="hover:text-[#2563eb]">
                 <FontAwesomeIcon icon={faFacebookF} />
               </a>
@@ -47,15 +48,15 @@ function Home() {
           </aside>
 
           {/* Hero Content */}
-          <section>
-            <h1 className="text-[7.5rem] font-extrabold text-[#333] mb-5 leading-none max-md:text-[5rem] max-sm:text-[3.75rem]">
+          <section className="order-1 md:order-2">
+            <h1 className="text-[3.5rem] sm:text-[5rem] md:text-[7rem] font-extrabold text-[#333] mb-4 leading-none">
               Yudelka Almonte
             </h1>
-            <p className="text-2xl text-gray-600 mb-10 font-normal max-sm:text-xl">
+            <p className="text-xl sm:text-2xl text-gray-600 mb-8 font-normal">
               Esto es lo que soy y lo que hago
             </p>
 
-            <div className="flex gap-5 mb-12 flex-wrap max-sm:flex-col max-sm:items-start">
+            <div className="flex gap-4 flex-wrap mb-10">
               <a
                 href="/Uploads/Curriculum Vitae Yuderka (2).pdf"
                 target="_blank"
@@ -71,7 +72,7 @@ function Home() {
               </button>
             </div>
 
-            <div className="max-w-[500px] text-gray-600 space-y-6 text-base leading-relaxed">
+            <div className="max-w-[600px] text-gray-700 space-y-6 text-base leading-relaxed">
               <p>
                 Soy Licenciada en Contabilidad, egresada de la Universidad
                 Abierta para Adultos (UAPA), con formación complementaria a
