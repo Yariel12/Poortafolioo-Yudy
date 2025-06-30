@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import Galeria from "../Components/galeria.jsx";
+import Bibliografia from "../Components/Bibliografia.jsx";
 
 function Home() {
   return (
@@ -109,6 +110,7 @@ function Home() {
 
       {/* Aquí va la Galería */}
       <Galeria />
+      <Bibliografia />
     </>
   );
 }
