@@ -1,11 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebookF,
-  faTwitter,
-  faLinkedinIn,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
+import { faLinkedinIn, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
   return (
@@ -44,12 +39,6 @@ function Footer() {
           <div className="min-w-[150px]">
             <strong className="block mb-2 text-black">Sigue</strong>
             <div className="flex gap-4 mt-1 text-lg text-black">
-              <a href="#" className="hover:text-[#2563eb]">
-                <FontAwesomeIcon icon={faFacebookF} />
-              </a>
-              <a href="#" className="hover:text-[#2563eb]">
-                <FontAwesomeIcon icon={faTwitter} />
-              </a>
               <a
                 href="https://www.linkedin.com/in/yudi-almonte-069358347/"
                 className="hover:text-[#2563eb]"

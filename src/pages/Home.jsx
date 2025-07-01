@@ -48,9 +48,6 @@ function Home() {
               <h1 className="text-[3.5rem] sm:text-[5rem] md:text-[7rem] font-extrabold text-[#333] mb-4 leading-none">
                 Yudelka Almonte
               </h1>
-              <p className="mb-8 text-xl font-normal text-gray-600 sm:text-2xl">
-                Esto es lo que soy y lo que hago
-              </p>
 
               <div className="flex flex-wrap gap-4 mb-10">
                 <a

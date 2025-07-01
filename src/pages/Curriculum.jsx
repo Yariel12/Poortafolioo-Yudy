@@ -12,7 +12,7 @@ function Curriculum() {
         Visualizar mi CV
       </a>
 
-      <div className="bg-white rounded-2xl shadow-lg p-6 space-y-6">
+      <div className="p-6 space-y-6 bg-white shadow-lg rounded-2xl">
         <h2 className="text-2xl font-semibold text-[#0047ff] border-b-2 border-[#0047ff] pb-2">
           2. Actividades Realizadas
         </h2>
@@ -21,7 +21,7 @@ function Curriculum() {
             Descripción de Proyectos
           </h3>
           <p className="text-base leading-relaxed">
-            De entrada está esta es una oficina que se dedica a la auditoría y
+            De entrada está es una oficina que se dedica a la auditoría y
             asesoría de impuestos. La empresa maneja la contabilidad de varias
             compañías, principalmente de constructoras en lo que amo se refiere
             yo he trabajado con varias haciendo declaraciones en el 606. Y en el
@@ -34,7 +34,7 @@ function Curriculum() {
           <h3 className="text-xl font-bold mb-1 text-[#333]">
             Habilidades Aplicadas
           </h3>
-          <ul className="list-disc list-inside space-y-1">
+          <ul className="space-y-1 list-disc list-inside">
             <li>Atención al detalle.</li>
             <li>Trabajo en equipo.</li>
             <li>Pensamiento crítico y lógico.</li>
@@ -45,7 +45,7 @@ function Curriculum() {
         </div>
       </div>
       <br />
-      <div className="bg-white rounded-2xl shadow-lg p-6 space-y-6">
+      <div className="p-6 space-y-6 bg-white shadow-lg rounded-2xl">
         <h2 className="text-2xl font-semibold text-[#0047ff] border-b-2 border-[#0047ff] pb-2">
           3. Proceso de Aprendizaje
         </h2>
